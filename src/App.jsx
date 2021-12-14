@@ -1,7 +1,8 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { useSelector } from 'react-redux';
 
 const App = () => {
-  const [greeting] = useState('Hello Mars');
+  const { greeting } = useSelector(state => state);
 
   return (
     <div>
