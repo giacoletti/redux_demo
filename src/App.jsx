@@ -1,13 +1,13 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import ChangeGreeting from './components/ChangeGreeting';
+import DisplayGreeting from './components/DisplayGreeting';
 
 const App = () => {
-  const { greeting } = useSelector(state => state);
-
   return (
-    <div>
-      {greeting}
-    </div>
+    <>
+      <DisplayGreeting />
+      <ChangeGreeting />
+    </>
   );
 };
 
