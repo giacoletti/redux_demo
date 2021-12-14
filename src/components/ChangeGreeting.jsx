@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
+import { thunkExperiment } from '../state/actions/actions';
 
 const ChangeGreeting = () => {
   const [newGreeting, setNewGreeting] = useState();
@@ -18,6 +19,7 @@ const ChangeGreeting = () => {
       >
         Click me!
       </ button>
+      <button onClick={() => dispatch(thunkExperiment())}>Show users</button>
     </>
   );
 };

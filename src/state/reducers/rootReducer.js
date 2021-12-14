@@ -5,6 +5,11 @@ const rootReducer = (state, action) => {
       ...state,
       greeting: action.payload
     };
+  } else if (action.type === "SET_USERS") {
+    return {
+      ...state,
+      users: action.payload
+    }
   } else {
     return state;
   }
